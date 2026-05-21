@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --color-beige-warm: #FBF9F6;
+  --color-beige-dark: #F3ECE0;
+  --color-olive-brand: #3B4E38;
+  --color-olive-light: #526C4E;
+  --color-olive-dark: #2A3828;
+  --color-mustard-brand: #C99A4E;
+  --color-mustard-light: #E0B46B;
+  --color-stone-brand: #464440;
+  --color-stone-text: #5A5852;
+  --color-stone-light: #A3A096;
+
+  --font-serif: "Playfair Display", Georgia, serif;
+  --font-sans: "Inter", system-ui, -apple-system, sans-serif;
+}
+
+@layer base {
+  body {
+    background-color: var(--color-beige-warm);
+    color: var(--color-stone-brand);
+    font-family: var(--font-sans);
+    overflow-x: hidden;
+  }
+
+  ::selection {
+    background-color: var(--color-mustard-brand);
+    color: white;
+  }
+
+  /* Custom smooth focus and transitions */
+  a, button {
+    transition-property: all;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 200ms;
+  }
+}
+
+/* Utility animations or custom aesthetic frames */
+.organic-border {
+  border-radius: 60% 40% 70% 30% / 50% 60% 40% 50%;
+}
+
+.organic-border-2 {
+  border-radius: 40% 60% 30% 70% / 60% 40% 50% 50%;
+}
+
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}

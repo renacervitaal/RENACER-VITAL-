@@ -1,0 +1,6 @@
+{
+  "name": "Renacer Vital",
+  "description": "Sitio web oficial de Renacer Vital. Un espacio de pausa, meditación, rituales conscientes y bienestar integral para jóvenes adultos.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
